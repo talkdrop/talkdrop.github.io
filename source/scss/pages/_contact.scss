@@ -1,0 +1,10 @@
+#contact {
+  padding: 0 $side-padding $side-padding * 3 $side-padding;
+}
+.dark-button {
+  background: $black;
+  color: white;
+  @media only screen and (min-width: 1280px) {
+    width: 20% !important;
+  }
+}

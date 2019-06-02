@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <!-- 
+    <meta property="og:image" content="images/share.jgp">
+    <meta property="og:description" content="">
+    <meta property="og:title" content="Otto Brewerytown – New 2019 Philadelphia Condos"> -->
+
+    <title>Talkdrop</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div id="top-nav-container">
+        <img
+          id="white-logo"
+          src="images/TalkdropWhiteLogo.svg"
+          alt="Talkdrop Logo in White"
+        />
+        <nav id="top-nav">
+          <a href="#features"><p>Features</p></a>
+          <a href="#testimonials"><p>Testimonials</p></a>
+          <a href="#team"><p>Team</p></a>
+          <a href="#contact"><p>Contact</p></a>
+        </nav>
+        <img id="menu-button" src="images/Menu.svg" alt="Menu Button Toggle" />
+      </div>
+      <nav id="mobile-nav">
+        <a onclick="toggleMenu()" href="#features"><p>Features</p></a>
+        <a onclick="toggleMenu()" href="#testimonials"><p>Testimonials</p></a>
+        <a onclick="toggleMenu()" href="#team"><p>Team</p></a>
+        <a onclick="toggleMenu()" href="#contact"><p>Contact</p></a>
+      </nav>
+
+      <div id="header-content">
+        <div id="header-text">
+          <h1>Connect with URBN students with Talkdrop!</h1>
+          <p>
+            Talkdrop is an installation and companion app that encourages URBN
+            students to connect using voice messages exclusive to the URBN
+            lobby.
+          </p>
+          <a href="mailto:master25studio@gmail.com">
+            <div class="button main-button">
+              <p>
+                Contact us
+              </p>
+            </div>
+          </a>
+        </div>
+        <img
+          id="display-phone"
+          src="images/DisplayPhone.png"
+          alt="Phone with Screenshot"
+        />
+      </div>
+
+      <div id="video-holder">
+        <div>
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/9WrczNlywYI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
+      </div>
+    </header>
+
+    <section id="features">
+      <div class="section-header">
+        <h2>Features</h2>
+        <h4 class="gray">Activating the URBN lobby!</h4>
+      </div>
+
+      <div class="feature feature-right">
+        <img
+          src="images/FeatureSocialObject.png"
+          alt="Social Object feature photos"
+        />
+        <div class="feature-text">
+          <h3>A physical installation in the URBN center lobby!</h3>
+          <p class="gray">
+            Used to localize and initialize the app, the Drop Zone also
+            functions as the center point for Talkdrop. It pulls people into a
+            shared digital world while simultaneously rooting them more
+            presently in the space.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature feature-left" id="feature-left">
+        <img
+          src="images/FeatureListening.png"
+          alt="Listening functionality in use"
+        />
+        <div class="feature-text feature-text-left">
+          <h3>Listen to voice messages left by other students</h3>
+          <p class="gray">
+            Tap on the drops to hear whats going on around you in URBN,
+            everything from food truck recommendations to new podcasts being
+            made to knock knock jokes.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature feature-right">
+        <img
+          src="images/FeatureRecording.png"
+          alt="Recording functionality in use"
+        />
+        <div class="feature-text">
+          <h3>Record your own drops and contribute to the conversations</h3>
+          <p class="gray">
+            Excited about something you’re working on? Struggling with finals
+            and need encouragement? Totally disagree with who’s the best food
+            truck on campus? Leave a voice drop letting everyone know
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <h4 class="gray">Activating URBN spaces</h4>
+      </div>
+
+      <div id="interactive-quotes">
+        <div id="social-object-interactive">
+          <div id="firstBubbles">
+            <img
+              onclick="toggleAudio(1)"
+              class="bubble"
+              src="images/TestimonialOne.png"
+              alt="Talkdrop green bubble"
+              id="bubble-one"
+            />
+
+            <img
+              onclick="toggleAudio(2)"
+              class="bubble"
+              src="images/TestimonialTwo.png"
+              alt="Talkdrop red bubble"
+              id="bubble-two"
+            />
+          </div>
+
+          <div id="secondBubbles">
+            <img
+              onclick="toggleAudio(3)"
+              class="bubble"
+              src="images/TestimonialThree.png"
+              alt="Talkdrop orange bubble"
+              id="bubble-three"
+            />
+
+            <img
+              onclick="toggleAudio(4)"
+              class="bubble"
+              src="images/TestimonialFour.png"
+              alt="Talkdrop blue bubble"
+              id="bubble-four"
+            />
+          </div>
+        </div>
+        <div id="quote-display">
+          <h4 id="quote-text">
+            “This feels like I’m walking through a communal finals week stream
+            of consciousness..it couldn’t be more strange, wonderful, absurd,
+            and creative. Go URBN Center!”
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="section-header">
+        <h2>Team</h2>
+        <h4 class="gray">Activating URBN spaces</h4>
+      </div>
+
+      <div id="team-container">
+        <div class="team-item">
+          <img src="images/TeamLuu.png" alt="Brendan Luu headshot" />
+          <h3>Brendan Luu</h3>
+          <h4 class="gray">Designer</h4>
+        </div>
+
+        <div class="team-item">
+          <img src="images/TeamRusso.png" alt="Brendan Russo headshot" />
+          <h3>Brendan Russo</h3>
+          <h4 class="gray">Designer</h4>
+        </div>
+
+        <div class="team-item">
+          <img src="images/TeamJake.png" alt="Jake Culp headshot" />
+          <h3>Jake Culp</h3>
+          <h4 class="gray">Designer</h4>
+        </div>
+
+        <div class="team-item">
+          <img src="images/TeamErin.png" alt="Erin Wiegman headshot" />
+          <h3>Erin Wiegman</h3>
+          <h4 class="gray">Developer</h4>
+        </div>
+
+        <div class="team-item">
+          <img src="images/TeamMartina.png" alt="Martina Calluori headshot" />
+          <h3>Martina Calluori</h3>
+          <h4 class="gray">Developer</h4>
+        </div>
+
+        <div class="team-item">
+          <img src="images/TeamPhoebe.png" alt="Phoebe Bostwick" />
+          <h3>Phoebe Bostwick</h3>
+          <h4 class="gray">Developer</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <h4 class="gray">Have any more questions? Feel free to reach out!</h4>
+      </div>
+
+      <a href="mailto:master25studio@gmail.com">
+        <div class="button dark-button">
+          <p>
+            Contact us
+          </p>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+      <div id="footer-container">
+        <img src="images/TalkdropLogo.svg" alt="Talkdrop Logo" />
+        <nav>
+          <a href="#features"><p>Features</p></a>
+          <a href="#testimonials"><p>Testimonials</p></a>
+          <a href="#team"><p>Team</p></a>
+          <a href="#contact"><p>Contact</p></a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

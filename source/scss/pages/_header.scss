@@ -1,0 +1,109 @@
+#header {
+  color: white;
+  width: 100vw;
+  background: url(../../../images/HeaderGradientLarger.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  @media only screen and (min-width: 768px) {
+    // background: url(../../../images/HeaderGradientLarger.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position-x: right;
+  }
+  @media only screen and (min-width: 1280px) {
+    // background-size: cover;
+    // background-position-x: right;
+  }
+  #header-content {
+    z-index: 1;
+    padding: $side-padding/2 $side-padding;
+    height: 95vh;
+    @media only screen and (min-width: 768px) {
+      padding: $side-padding $side-padding * 6;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding: $side-padding $side-padding * 8;
+      height: 60vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    @media only screen and (min-width: 1280px) {
+      padding: $side-padding $side-padding * 10;
+      height: 70vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 $side-padding 0;
+      @media only screen and (min-width: 768px) {
+        margin: $side-padding * 3 0 $side-padding 0;
+      }
+      @media only screen and (min-width: 1024px) {
+        margin: $side-padding 0 $side-padding 0;
+      }
+      @media only screen and (min-width: 1024px) {
+        margin: 0 0 $side-padding 0;
+      }
+    }
+    #header-text {
+      @media only screen and (min-width: 1280px) {
+        width: 50%;
+      }
+    }
+  }
+
+  .main-button {
+    margin: $side-padding 0 $side-padding 0;
+    background: white;
+    color: $black;
+  }
+
+  #display-phone {
+    width: 70%;
+    position: absolute;
+
+    @media only screen and (min-width: 768px) {
+      width: 40%;
+      padding: 50px 0 0;
+    }
+    @media only screen and (min-width: 1024px) {
+      width: 30%;
+      position: relative;
+      padding: 0;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 30%;
+      position: relative;
+    }
+  }
+
+  #video-holder {
+    z-index: 10;
+    background: $black;
+    height: auto;
+
+    padding: 100px 0 0 0;
+    height: 60vh;
+    @media only screen and (min-width: 1280px) {
+      height: 100vh;
+    }
+
+    div {
+      padding: $side-padding * 5 $side-padding;
+      height: 100%;
+
+      padding: 0;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      height: 80%;
+      width: 80%;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+/*
+ * Typography
+ *
+ * This file collects some basic typography styles for copy text.
+ *
+ *****************************************************************************/
+
+// @font-face {
+//     font-family: 'Trade';
+//     src: url('../../../fonts/Trade-Gothic-LT-Extended.ttf');
+
+// }
+
+body {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  // transition: color 0.2s ease-in-out;
+}
+
+h1 {
+  font-family: "Radio Grotesk";
+  font-weight: bold;
+  font-size: 1.8rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-family: "Radio Grotesk";
+  font-size: 2rem;
+  font-weight: bold;
+  @media only screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 3.2rem;
+  }
+}
+
+h3 {
+  font-family: "Radio Grotesk";
+  font-size: 1.6rem;
+  font-weight: normal;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-family: "Radio Grotesk";
+  font-size: 1.3rem;
+  font-weight: normal;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-family: "Radio Grotesk";
+  font-size: 1rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 1.2rem;
+  }
+}

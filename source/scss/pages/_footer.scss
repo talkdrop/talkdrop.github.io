@@ -1,0 +1,38 @@
+footer {
+  padding: 0 $side-padding;
+  background: $black;
+  #footer-container {
+    padding: $side-padding * 2 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: 1024px) {
+      padding: $side-padding * 2 $side-padding * 8;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media only screen and (min-width: 1280px) {
+      padding: $side-padding * 2 $side-padding * 10;
+    }
+  }
+  nav {
+    padding: $side-padding 0;
+    @media only screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+    }
+    @media only screen and (min-width: 1280px) {
+      width: 30%;
+    }
+
+    p {
+      text-align: center;
+      color: white;
+      padding: $side-padding/1.5 0;
+    }
+  }
+}

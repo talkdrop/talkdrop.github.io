@@ -1,0 +1,54 @@
+#testimonials {
+  #interactive-quotes {
+    #social-object-interactive {
+      height: 70vh;
+      background: url(../../../images/SocialObjectInteractive.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      display: flex;
+      flex-direction: column;
+      @media only screen and (min-width: 768px) {
+        height: 55vh;
+      }
+      @media only screen and (min-width: 1024px) {
+        height: 40vh;
+        background-size: cover;
+      }
+      @media only screen and (min-width: 1280px) {
+        height: 40vh;
+      }
+      div {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      #firstBubbles {
+        justify-content: space-around;
+      }
+      #secondBubbles {
+        justify-content: space-evenly;
+      }
+    }
+    #quote-display {
+      padding: $side-padding $side-padding $side-padding * 3;
+      text-align: center;
+      position: relative;
+      height: 40vh;
+      @media only screen and (min-width: 768px) {
+        height: 10vh;
+        padding: $side-padding $side-padding * 6;
+      }
+      @media only screen and (min-width: 1024px) {
+        height: 15vh;
+        padding: $side-padding $side-padding * 16;
+      }
+      @media only screen and (min-width: 1280px) {
+        height: 20vh;
+        padding: $side-padding $side-padding * 24;
+      }
+    }
+  }
+}
